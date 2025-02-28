@@ -1,0 +1,9 @@
+/* Make a new file for external css and writes all the css in this 
+file and link this file to html file  */
+
+/* external css */
+
+h3{
+    color:red;
+    background-color:pink
+}
