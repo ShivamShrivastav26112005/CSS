@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Absolute Positioning</title>
+
+    <style>
+
+        #div1{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+
+        /* #div2{
+
+            height: 200px;
+            width: 200px;
+            background-color: red;
+
+            /* absolute positioning */
+            /* red ele.s can't fixed it scrolls with the content, it moves away with the scrolls 
+
+            position: absolute;
+            bottom:50px;
+            right:50px;
+
+        } */
+
+
+
+
+        /* #div2{
+
+            height: 200px;
+            width: 200px;
+            background-color: red;
+
+            /* fixed positioning 
+            /* red ele.s are fixed it doesn't  scrolls with the content, it doesn't moves away with the scrolls, it is fixed at their position while scrolling the page 
+
+            position: fixed;
+            bottom:50px;
+            right:50px;
+
+        } */
+
+
+        #div2{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+
+            /* sticky positioning -: S.P. is a complex value or style in between fixed and static */
+
+            position: sticky;
+            top: 20px;
+
+        }
+
+
+
+        #div3{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+
+       
+    </style>
+
+</head>
+<body>
+
+    <!-- adds couple of diff paragraphs -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <!-- html ele.s -->
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam delectus, quod id necessitatibus beatae sapiente commodi, impedit quas dignissimos minus veritatis provident! Fuga nulla quo minima tempore itaque animi at, dolorem hic alias tenetur architecto, voluptatem corporis libero minus, inventore rerum quos. Praesentium iste quod blanditiis, dicta dolorum velit!</p>
+
+</body>
+</html>
+

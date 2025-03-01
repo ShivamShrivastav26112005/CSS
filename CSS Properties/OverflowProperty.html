@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CSS Overflow Property</title>
+    
+    <style>
+
+        /* contents are going to be overflowing */
+        div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+
+            /* overflow property -: */
+
+            /* nothing to be changed, visible is a default value */
+            /* overflow: visible; */
+
+            /* all overflow contents are now disappear or gone */
+            /* overflow: hidden; */
+
+            /* Most useful is "scroll" property when contents are going to be overflow */
+
+            /* it gives to you a "scroll bar" where you can scroll and the contents are shown below or visible */
+            /* overflow: scroll; */
+
+            /* when the contents are overflowing it will automatically get a scroll bar */
+            overflow: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo eligendi mollitia ipsa minus doloremque eum numquam ratione nostrum, laudantium id sit recusandae eos, veritatis doloribus magnam. Debitis dolore in mollitia unde officia rem placeat error vel aspernatur. Soluta labore eligendi, quisquam assumenda ducimus optio cumque adipisci quaerat autem voluptatum? Voluptatibus.</p>
+    </div>
+    
+</body>
+</html>
