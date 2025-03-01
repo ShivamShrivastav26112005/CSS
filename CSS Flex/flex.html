@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <!-- flex display property -->
+    <!-- styling apply on the box not on the items which are present inside the box -->
+    
+    <style>
+        
+        .container{
+            /* thses are the some property */
+            display:flex;
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            justify-content: space-evenly;
+
+            /* control orientation of the ele.s */
+            flex-direction: row-reverse;
+        }
+
+        .item{
+            color: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+</body>
+</html> 

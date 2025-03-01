@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Flex Property</title>
+
+    <style>
+        .container{
+            background-color: green;
+            color: white;
+            text-align: center;
+            align-items: center;
+            font-size: x-large;
+            font-weight: 300;
+
+            /* ele.s are arranged next to each other */
+            display: flex;
+            /* justify-content: space-around; */
+            justify-content: space-between;
+
+            flex-direction: row-reverse;
+
+            flex-wrap:initial;
+        }
+
+
+        .container2{
+            height: auto;
+            width: auto;
+            background-color: brown;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            border: 20px solid black;
+            border-radius: 20px;
+
+            display: flex;
+            justify-content: space-evenly;
+            justify-items: left;
+            flex-direction: column-reverse;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="items">Item1</div>
+        <div class="items">Item2</div>
+        <div class="items">Item3</div>
+    </div>
+    
+
+    <div class="container2">
+        <div class="items2">Item1</div>
+        <div class="items2">Item2</div>
+        <div class="items2">Item3</div>
+    </div>
+
+</body>
+</html>

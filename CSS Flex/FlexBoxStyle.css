@@ -1,0 +1,209 @@
+/* body{
+    background-color: #031865;
+    color: white;
+} */
+
+
+/* or use css variables */
+
+
+
+/* css variables syntax -: store values and reuse them */
+
+/* these are the some css variables -: */
+
+
+:root{
+    --teal:#031865;
+    --cobalt:#033765;
+    --turquoise:#034534;
+    --beige:#CEB673;
+    --gold:#FADDCC;
+}
+
+/* every html ele.s have some default margin and padding */
+/* margin=0, padding=0 removes all the default margin and padding  */
+/* margin and padding takes some extra spaces */
+
+body{
+
+    /* 
+    margin: 0;
+    padding: 0; 
+    */
+
+    background-color: var(--turquoise);
+    color: white;
+
+}
+ 
+
+
+#myname{
+
+    /* none removes writes content inside the span tags */
+    /* display:none; */
+
+    /* display:block; -: block ele. gives new line */
+    display:block;
+    color:var(--gold);
+    font-size: 30px;
+
+}
+
+
+
+
+
+/* used "id attributes" then use (#) */
+#experience-list{
+
+    /* style ul tags */
+    /* after apply margin=0, padding=0 all the extra spaces are removed  */
+    
+    /* height: 300px; */
+
+    /* padding-left:200px;
+    padding-bottom: 150px; */
+
+    /* border-top: 100px;
+    border-color: var(--beige); */
+
+    /* border-style: solid;;
+    list-style-type: upper-alpha;
+    border-radius: 50px; */
+
+    border: 10px solid var(--beige);
+    margin: 30px;
+    width: 300px;
+    padding: 20px;
+    border: 20px;
+    box-sizing: border-box;
+
+} 
+
+
+/* used "class attributes" then use (.) */
+.experience-item{
+    /* list-style-type: disc; */
+
+    /* list-style-type: square; */
+
+    list-style-type:circle;
+
+}
+
+
+.section-turquoise{
+    background-color: var(--turquoise);
+}
+
+/* gradient divider */
+.gradient-section{
+    height: 50px;
+    background: linear-gradient(90deg, rgba(31, 31, 172) 1%, rgb(143, 154, 18) 50%, rgba(162, 55, 162,0.8) 100%);
+
+    margin-bottom: 30px;
+}
+
+/* for "class" att. id used (.) and for "id" att. id used (#) for styling them  */
+
+#experience-header{
+    font-size: 3em;
+
+    /* margin is a space outside of the rectangle box */
+
+    /* margin: 0 auto;
+    width: 100px; */
+
+    /* width: 40%; */
+
+    /* arrangement of the maximum margin possible from the left and right side of the border */
+
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    /* or */
+
+    /* 0 means no margin from left or right */
+    /* margin: 0 auto; */
+
+    /* or */
+
+    text-align: center;
+
+    padding: 1rem;
+}
+
+
+/* (.) dot is used when class att. comes */
+
+/* 
+.navlist-item{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+} */
+
+
+
+
+/* (#) is used when id att. comes */
+
+
+
+
+
+/* IMP -: */
+/* this is our flex container-: */
+
+/* all are written in left sides are "property" and their corresponding are their "values" -: */
+#navlist{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+    /* used flex property -: */
+
+    /* default property of flex is row so, all the ele.s are arranged in a rows */
+    display: flex;
+
+    /* all item are comes in columns */
+    /* flex-direction: column; */
+
+    /* all item are comes in rows */
+    /* flex-direction: row; */
+
+    /* all item are comes in rows but their order is reversed and starts from right side */
+    /* flex-direction: row-reverse; */
+
+    /* all item are comes in columns but their order is reversed (bottom to top) and starts from left top side */
+    /* flex-direction: column-reverse; */
+
+    /* define "space" using gap property -: */
+    gap: 2rem;
+
+    /* by using "justify-content property" you can "control the arrangements" */
+    /* every contents are arranged in centre and maintain 2rem gaps */
+    justify-content: center;
+
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    justify-content: space-around;
+
+
+    height: 70px;
+    align-items: center;
+
+}
+
+
+
+
+
+.navlist-item-text{
+    text-decoration: none;
+    color: white;
+}
