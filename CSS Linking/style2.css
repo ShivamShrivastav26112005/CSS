@@ -1,0 +1,50 @@
+/* external css */
+
+h1{
+    color:blue;
+    background-color:aqua
+}
+
+div{
+    background-color: red;
+    font-size: 50px;
+}
+
+/* 1-: id selectors */
+/* styling using id attributes or id selectors */
+/* colors using rgba, a-> transparency blw [0,1], ex-0.8 */
+
+#maintext{
+    color:red;
+    background-color:rgba(24,200,45,0.8)
+}
+
+
+p{
+    color:green;
+    font-size: 30px;
+    background-color:rgb(rgb(217, 39, 39), rgb(31, 224, 31), rgb(151, 151, 237));
+}
+
+/* 2-: class selectors */
+/* styling using class attributes -> it selects mutliple html ele.s or group of ele.s */
+/* colors using rgb -: rgb(val1, val2, val3) attributes */
+/* takes values b/w [0,255] */
+
+.divgroup{
+    color:rgb(84, 231, 84);
+    background-color: rgb(226, 16, 110);
+    font-size: 25px;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+/* 3-: universal selectors */
+/* it selects all the given ele.s on the web page */
+
+*{
+    letter-spacing:10px;
+}
