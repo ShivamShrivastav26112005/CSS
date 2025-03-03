@@ -1,0 +1,139 @@
+/* external css */
+
+h1{
+    color:blue;
+    background-color:aqua
+}
+
+/* div{
+    background-color: red;
+    font-size: 50px;
+} */
+
+/* 1-: id selectors */
+/* styling using id attributes or id selectors */
+/* colors using rgba, a-> transparency blw [0,1], ex-0.8 */
+
+#maintext{
+    color:red;
+    background-color:rgba(24,200,45,0.8)
+}
+
+
+p{
+    color:green;
+    font-size: 30px;
+    background-color:rgb(rgb(217, 39, 39), rgb(31, 224, 31), rgb(151, 151, 237));
+}
+
+/* 2-: class selectors */
+/* styling using class attributes -> it selects mutliple html ele.s or group of ele.s */
+/* colors using rgb -: rgb(val1, val2, val3) attributes */
+/* takes values b/w [0,255] */
+
+.divgroup{
+    color:rgb(235, 16, 180);
+    background-color: rgb(226, 156, 16);
+    font-size: 25px;
+}
+
+/* 3-: universal selectors */
+/* it selects all the given ele.s on the web page */
+
+*{
+    letter-spacing:10px;
+}
+
+
+
+#targetdiv{
+    background-color: rgb(42, 164, 164);
+}
+
+
+#imagediv{
+    height:500px;
+    /* background-color: blue; */
+
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.ErAiMih0ltX9nxzgEbfN0gHaEp&pid=Api&P=0&h=180");
+
+    /* only one image is inserted at a time if we not write no-repeat than more than one image is inserted at the given space 500px */
+
+
+    /* background-repeat: no-repeat; */
+
+
+    /* repeat multiple times both x and y-axis */
+    /* background-repeat: repeat; */ 
+
+
+    /* repeat x-axis side (horizontally) */
+    /* background-repeat: repeat-x;  */
+
+
+    /* repeat y-axis side (vertically) */
+    background-repeat: repeat-y;
+
+    /* now background image is not scrolled, it is fixed */
+    /* background-attachment: fixed; */
+
+    
+    /* now background image is scrolled, it is not fixed */
+    background-attachment: scroll;
+
+    background-size: 350px 300px;
+
+}
+
+/* text decoration properties Syntax -: */
+/* text-decoration: text-decoration-line color type thickness */
+
+#textdecoration{
+    /* text-decoration:underline; */
+
+    /* text-decoration:overline; */
+
+    /* text-decoration:line-through; */
+
+
+    /* IMP -: more properties you can write */
+    /* text-decoration:underline red; */
+
+    /* 20 pixel is a thickness */
+    /* text-decoration: underline pink dotted 10px; */
+    /* text-decoration:underline blue wavy 20px; */
+
+
+    /* text transform property -> change case of the text */
+    /* text-transform: lowercase; */
+    /* text-transform: uppercase; */
+    text-transform: capitalize;
+
+    /* text can have lots of spaces */
+    letter-spacing: 10px;
+    word-spacing: 10px;
+
+    /* height b/w two lines */
+    line-height: 100px;
+
+    /* whole text to be aligned to the centre to their parent */
+    /* text-align: center; */
+
+    text-align: right; 
+
+}
+
+/* Wow goes to the upper of their lines */
+span{
+    /* vertical-align: super; */
+    /* vertical-align: bottom; */
+
+    /* whole text except Wow goes to upper */
+    vertical-align: text-top;
+
+
+
+
+
+}
+
