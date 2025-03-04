@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Table</title>
+
+    <!-- this is going to be converted all the div tags into the table by giving class id using css property -->
+
+    <!-- this is css -->
+    <style>
+        .table{
+            display: table;
+            border: 10px solid black;
+            width: 90%;
+            text-align: center;
+        }
+
+        .table-row{
+            display: table-row;
+            border: 7px solid black;
+        }
+
+        .table-cell{
+            display: table-cell;
+            border: 5px solid black;
+            padding: 10px;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+    
+    <!-- this is bunch of different divs which is going to be converted into table -->
+    <!-- this is not a table tag, this is a div tag, we want to convert into a table -->
+
+    <!-- this is html -->
+    <div class="table">
+        <div class="table-row">
+            <div class="table-cell">Cell 1</div>
+            <div class="table-cell">Cell 1</div>
+            <div class="table-cell">Cell 1</div>
+        </div>
+    </div>
+
+    <div class="table">
+        <div class="table-row">
+            <div class="table-cell">Cell 1</div>
+            <div class="table-cell">Cell 1</div>
+            <div class="table-cell">Cell 1</div>
+        </div>
+    </div>
+
+
+    <!-- display property for "inline" table -->
+    <!-- we can change paragraphs into an inline-ele.s becoz "p" is a block level-ele -->
+    <p style="display:inline">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere nam eum cumque esse repellat maiores distinctio aliquam at molestiae perferendis qui, commodi voluptas sed aliquid similique? Fugit pariatur amet ut voluptatibus repellat consequuntur deserunt corporis maxime harum laborum, fuga est itaque laudantium! Deleniti sit nulla officiis aspernatur nemo quis.
+    </p>
+
+    <!-- "none" display property says that the given below paragraphs are no longer visible -->
+
+    <p style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quis totam qui magni, explicabo consectetur omnis. Tempora placeat reprehenderit dolor exercitationem quo, sunt asperiores, incidunt voluptates adipisci nam maiores veritatis. Tempora, ullam corporis distinctio corrupti ut, a et blanditiis molestias voluptas illo consequatur quibusdam vel adipisci autem odio hic dolor?</p>
+
+
+</body>
+</html>
