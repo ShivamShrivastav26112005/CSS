@@ -1,0 +1,126 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ordered Lists</title>
+
+</head>
+
+<body>
+    <h3>Normal Layout</h3>
+
+    <p>
+        Elements are placed in the order in which they appear in the HTML documents and their positions are determined by their default positioning properties. 
+    </p>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+</body>
+
+</html> 
+
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ordered Lists</title>
+
+    <!-- gives internal styling to our html ele.s -->
+    <style>
+
+        /* these are 3 html selectors or ele. selectors */
+        
+        /* h3,p,li{
+            background-color: blue;
+            color: white;
+            border: 5px solid yellow;
+            padding: 10px;
+        } */
+
+
+        /* block property works on vertically */
+        /* .item{
+            display: block;
+            background-color: brown;
+            color: white;
+            border: 10px solid yellow;
+            padding: 10px;
+        } 
+
+        .item2{
+            height: 150px;
+        } */
+
+
+        /* inline property works on horizontally */
+        /* .item{
+            display: inline;
+            background-color: brown;
+            color: white;
+            border: 10px solid yellow;
+            padding: 50px;
+        }
+
+        .item2{
+            margin-right: 100px;
+            width: 200px;
+        } */
+
+
+        /* inline-block property works on both vertically and horizontally */
+        .item{
+            display: inline-block;
+            background-color: brown;
+            color: white;
+            border: 10px solid yellow;
+            padding: 50px;
+        }
+
+        .item2{
+            height: 100px;
+        }
+
+
+        /* none property -: all gone, nothing visible */
+        /* .item{
+            display: none;
+            background-color: brown;
+            color: white;
+            border: 10px solid yellow;
+            padding: 50px;
+        }
+
+        .item2{
+            height: 100px;
+        } */
+
+
+    </style>
+</head>
+
+<body>
+<!-- by default "div" is a block-level ele.s -->
+<!-- class is a id attributes -->
+    <div>
+        <div class="item1 item">Item 1</div>
+        <div class="item2 item">Item 2</div>
+        <div class="item3 item">Item 3</div>
+    </div>
+
+</body>
+
+</html>

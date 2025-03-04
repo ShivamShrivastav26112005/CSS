@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Visibility</title>
+
+    <!-- css used here -->
+    <style>
+        .list{
+
+            /* these are diff-2 ways to hide a html ele.s in css */
+
+            /* in this case white space will be there */
+            /* visibility: visible; */
+            /* visibility: hidden; */
+
+            /* opacity is 0 then fully transparent, if 1 then fully visible */
+            /* opacity: 0; */
+            /* opacity: 1; */
+            /* opacity: 0.5; */ 
+
+            /* in this case white space also will be gone */
+            display: none ;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- html used here -->
+    <p>Before List</p>
+
+    <div class="list">
+        <div class="list-item">Item 1</div>
+        <div class="list-item">Item 2</div>
+        <div class="list-item">Item 3</div>
+    </div>
+
+    <p>After List</p>
+
+</body>
+</html> 
