@@ -1,0 +1,26 @@
+/* css properties -: */
+
+/* syntax for css -:
+selector_for_parent_elements{
+    properties:values;
+
+    ex-;
+    display:grid;
+} */
+
+#container{
+    /* these are some properties and their values -: */
+    display: grid;
+    border: 10px solid black;
+    padding: 5px; 
+    border-radius: 10px;
+    
+    /* it defines size and no.of columns */
+    grid-template-columns: 200px 200px 200px;
+}
+
+.item{
+    background-color: aqua;
+    padding: 5px;
+    margin: 10px;
+}
