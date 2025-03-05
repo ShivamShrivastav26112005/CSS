@@ -1,0 +1,160 @@
+/* css properties -: */
+
+/* syntax for css -:
+selector_for_parent_elements{
+    properties:values;
+    ex-; 
+    display:grid;
+} */
+
+
+#container{
+    /* these are some properties and their values -: */
+    display: grid;
+    border: 2px solid black;
+    padding: 5px; 
+    border-radius: 10px;
+
+    /* 1-: grid-template-columns property -:  */
+
+    /* 1st column */
+    /* grid-template-columns: 150px; */
+
+    /* 1st and 2nd columns */
+    /* grid-template-columns: 150px 150px; */
+
+    /* 1st and 2nd columns with values in % unit */
+    /* grid-template-columns: 20% 60%; */
+
+    /* 1st, 2nd and 3rd columns also introduce */
+    /* we given 3 values then size of the rows is 3 only */
+    /* grid-template-columns: 20% 60% 20%; */
+
+
+
+
+    /* 2-: grid-template-rows property -:  */
+
+    /* we are given 3 values then only 3 rows are affected */
+    /* grid-template-rows:50px 50px 50px; */
+
+
+    /* grid-auto-flow: row; */
+
+
+    /* only two rows are affected rest are the same */
+    /* grid-auto-flow: row;
+    grid-template-rows:50px 50px; */
+
+
+
+    /* and columns are auto fill */
+    /* grid-auto-flow: column; */
+    /* only 2 rows are made */
+    /* grid-template-rows:50px 50px; */
+
+/* 
+    display: grid;
+    grid-template-columns: 20% 60%; 
+    grid-auto-flow: column; */
+
+
+    /* display: grid;
+    grid-template-rows: 50px 50px 50px; */
+
+
+/* 
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 50px 50px 50px; */
+
+
+/* 
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 50px 50px 50px; */
+
+
+    /* grid-template-columns: 20% 60%; 
+    grid-template-rows: 50px 50px 50px; */
+
+    
+
+    /* fractional units (fr) with grids -:  */
+
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px;  */
+
+
+    /* total 4fr are divided -: */
+    /* 1fr goes to 1st col, 2fr goes to 2nd col, 1fr goes to 3rd col. */
+    /* grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 50px 50px;  */
+
+
+    /* grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 50px 50px 50px;  */
+
+
+
+    /* grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-rows: 50px 50px 50px; 
+    grid-auto-flow: column;
+    */
+
+    /* 1-:repeat() fun -: */
+
+    /* while using 1fr 1fr 2fr 1fr, i am using repeat fun. */
+    /* this means no.of col.s is 5 with 1fr size each, you can change the given value a/t you */
+    /* grid-template-columns: repeat(5, 1fr); */
+
+    /* or */
+
+    /* grid-template-columns: repeat(2,1fr) 2fr 1fr; */
+
+
+    /* 2-: minmax fun -: */
+
+    /* atleast 100px and maximum 200px -: */
+    /* minmax(min val, max val) -: */
+    /* grid-template-columns: 100px minmax(100px, 200px) 100px; */
+
+
+    /* grid-template-areas property -: */
+
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "a1 a2 a3"
+    "b1 b2 b3"
+    "c1 c2 c3"; */
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "a1 a1 a1"
+    "b1 b2 b3"
+    "c1 c2 c3";
+
+    /* grid-gap property -: it gives gaps b/w col.s and rows */
+    grid-gap: 2rem;
+
+
+
+
+    /* by using css grid area concepts we can gives colors also -: */
+    /* using this area names we can give specific styling to all of these areas */
+    /* ex below using div -: */
+
+}
+
+div{
+    background-color: red;
+}
+
+
+
+
+.item{
+    background-color: aqua;
+    margin: 2px;
+    padding: 3px;
+}
