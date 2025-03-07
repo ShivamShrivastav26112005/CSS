@@ -1,0 +1,60 @@
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.a1{
+    grid-row: 2/4;
+    grid-column: auto;
+}
+
+.a2{
+    grid-row: 1/4;
+    grid-column: 3/4;
+}
+
+.a3{
+    grid-row: 1/5;
+    grid-column: 3/3;
+}
+
+.a4{
+    grid-row: inherit;
+    grid-area: initial;
+    grid-auto-rows: 0cap;
+}
+
+.a5{
+    grid-row: 4/5;
+    grid-column: auto;
+}
+
+.a6{
+    grid-row: 5/6;
+    grid-template-columns: 5fr;
+    grid-area: span 4;
+    grid-auto-flow: row;
+    grid-column-start:initial;
+}
+
+
+
+#Image{
+    background-color: blue;
+    color: wheat;
+    align-items: center;
+    text-align: center;
+}
+
+
+#image{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}

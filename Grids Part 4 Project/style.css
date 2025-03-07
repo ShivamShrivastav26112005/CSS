@@ -1,0 +1,82 @@
+/* CSS Syntax -: */
+
+/* id/class selectors{
+    properties:values;
+} */
+
+/* when "id" attributes used then use #
+when "class" attributes used then use . */
+
+
+/* NOTE -: Makes gallery using css grids properties like grid-row, grid-column-: */
+
+#gallery{
+    display: grid;
+    
+    /* 1st 4 are 1fr and 3rd last are 2fr and 2nd last are 1fr column and last are also 1fr column */
+    /* these properties gives to me a new column -: */
+    grid-template-columns: repeat(4,1fr) 2fr 1fr 1fr;
+    gap: 0.5rem;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.fourxfour_image{
+    /* grid-row: 1 / 3; -> starts from row no. 1 and move to 3 */
+    /* grid-row: 1 / 3; */
+    
+    /* starting from row no. 2 and goint till row no. 5 */
+    /* grid-row: span 2 / 5; */
+
+    /* you can customise more */
+    /* grid-row: span 2 / auto; */
+
+
+    grid-row: 1 / 3; /* starts from row no. or line no. / end till line no. or row no. */
+    grid-column: 1 /3; /* starts from col. no. or line no. / end till line no. or col. no. */
+}
+
+
+.fourxfour_image_2{
+    grid-row: 2 / 4;
+    grid-column: 3 / 5;
+}
+
+.last_col_image{
+    grid-row: 1 / 4;
+    grid-column: 5 / 6;
+}
+
+.twoxtwo_image_1{
+    grid-row: 4 / 6;
+    grid-column: 1 / 3;
+}
+
+.twoxtwo_image_2{
+    grid-row: 4 / 6; /* row starts from 4 and end with 6 */
+    grid-column: 3 / 5; /* column starts from 4 and end with 6 */
+}
+
+.twoxtwo_image_3{
+    grid-row: 4 / 6; /* row starts from 4 and end with 6 */
+    grid-column: 5 / 8; /* column starts from 4 and end with 6 */
+}
+
+
+.a{
+    object-fit: cover;
+    grid-row: 1 / 4;
+}
+
+.b{
+    object-fit: cover;
+    grid-row: 1 / 2;
+}
+
+.c{
+    object-fit: cover;
+    grid-row: 2 / 3;
+}
