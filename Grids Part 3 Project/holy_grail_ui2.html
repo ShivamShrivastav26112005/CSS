@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail UI2</title>
+
+    <style>
+
+        #container{
+            display: grid;
+            text-align: center;
+
+            /* grid-template-rows: 10vh 90vh 100px; */
+            /* grid-template-rows: 100px 100vh 100px; */
+            
+            /* it takes complete viewport (vh) */
+            /* grid-template-rows: 10vh 80vh 10vh; */
+            
+            grid-template-rows: 100px 600px 100px;
+            grid-template-columns: 2fr 3fr 2fr;
+            grid-auto-flow: column;
+            grid-template-areas: 
+            "header header header"
+            "nav article aside"
+            "footer footer footer";
+        }
+
+        /* remove main parts -: */
+        /* main{
+            display: grid;
+            grid-area: main;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 3fr 1fr;
+        } */
+
+        header{
+            grid-area: header;
+            background-color: red;
+        }
+        nav{
+            background-color: blue;
+        }
+        article{
+            background-color: yellow;
+        }
+        aside{
+            background-color: green;
+        } 
+        footer{
+            grid-area: footer;
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        
+        <!-- remove main parts -: -->
+        <!-- <main> -->
+            <nav>
+                <h1>Nav</h1>
+            </nav>
+            <article>
+                <h1>Article</h1>
+            </article>
+            <aside>
+                <h1>Aside</h1>
+            </aside>
+        <!-- </main> -->
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </div>
+
+</body>
+</html>
