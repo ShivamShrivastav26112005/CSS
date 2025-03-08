@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    margin-right: 15px;
+}
+
+#menu{
+    display: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: bolder;
+    transition: all 0.7s ease;
+}
+
+/* when we hover anchor tag than it change b-c and color also */
+a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/* we can define here ranges -: */
+
+
+/* check one media at a time and except are in commented mode-: */
+
+/* make a responsive websites using "media" keywords -: */
+
+@media screen and (max-width: 768px){
+    /* we will apply the below rules to those screen which have atmost 768px width  */
+    header{
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 570px){
+    /* we will apply the below rules to those screen which have atmost 570px width  */
+
+    /* a{
+        margin: 0.5px;
+    } */
+
+    header{
+        height: auto;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    ul{
+        width: 100%;
+
+        /* flex-direction: column;
+        margin-right: 0;
+        align-items: center;
+        justify-content: space-around; */
+
+        display: block;
+    }
+
+    /* li{
+        width: 100%;
+        margin: 0 auto; 
+    } */
+
+
+    ul li{
+        width: 100%;
+        margin: 10px;
+    }
+
+   
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    /* this css rule will be applied only if the screen width is less than 768px */
+    header{
+        display: block;
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    ul{
+        /* display: block;
+        margin-right: 0; */
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        padding: 20px 0px;
+    }
+
+    ul li{
+        /* margin: 10px; */
+
+        display: none;
+        width: 100%;
+        padding: 10px 10px ;
+    }
+
+    #menu{
+       display: block; 
+       display: inline;
+       width: auto;
+    }
+
+    li a{
+        display: block;
+        width: 95%;
+        text-align: center;
+    }
+}
+
+/* you can go back till "menu" tag is not disappeared from the html file and css file also */
+
+
+
+
+
