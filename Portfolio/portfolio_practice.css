@@ -1,0 +1,72 @@
+/* these are some css variables -:  */
+
+:root{
+    --teal:#7c8ecf;
+    --gold:rgb(217, 229, 129);
+    --bold: #99e675;
+    --beige:#CEB673;
+}
+
+body{
+    background-color: var(--teal);
+    color: white;
+}
+
+
+#myname{
+    display: block;
+    color: var(--gold);
+    font-size: 30px;
+}
+
+
+#experience-list{
+    height: 300px;
+    margin: 10px;
+
+    padding: 20px;
+    padding-left:200px;
+    padding-bottom: 150px;
+
+    border: 20px;
+    border-top: 90px;
+    border-color: var(--beige);
+
+    border-style: solid;;
+    list-style-type: upper-alpha;
+    border-radius: 50px;
+}
+
+.experience-item{
+    list-style-type:circle;
+}
+
+.section-turquoise{
+    background-color: var(--bold);
+}
+
+
+.gradient-section{
+    height: 50px;
+    margin-top: 40px;
+    background: linear-gradient(90deg, rgba(31, 31, 172) 1%, rgb(143, 154, 18) 50%, rgba(162, 55, 162,0.8) 100%);
+    margin-bottom: 50px;
+}
+
+#experience-list{
+    height: 300px;
+    margin: 10px;
+
+    padding: 20px;
+    padding-left:200px;
+    padding-bottom: 150px;
+
+    border: 20px;
+    border-top: 90px;
+    border-color: var(--beige);
+
+    border-style: solid;;
+    list-style-type: upper-alpha;
+    border-radius: 40px;
+}
+
