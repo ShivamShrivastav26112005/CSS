@@ -1,0 +1,288 @@
+
+/* styling applied here */
+
+/* select class and id one by one and style them -: */
+
+
+
+
+
+:root{
+    /* inside this we can define some css variables */
+
+    /* css variables -: reuseable ele.s inside css if we want to put same color f5f5f5 multiple times 
+    instead of putting same color f5f5f5 multiple times, we can put only variable name. */
+
+    /* you can give any name of the variable */
+
+    /* these are css variables */
+
+    --cool-white:#f5f5f5;
+    --light-black:#2a2a2a;
+    --dark-yellow:#ffcc33;
+    --absolute-white: #ffffff;
+    --offwhite: #e0e0e0;
+    --light-black:#2a2a2a;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    /* don't write directly */
+    /* background-color: #f5f5f5; */
+
+    /* write here variable name */
+    background-color: var(--cool-white);
+
+
+
+
+}
+
+
+.page{
+    display: grid;
+
+    /* we have 3 grids, in a first row we have 2 grids order and payment and in the 2nd row we have total named grid */
+    grid-template-areas: 
+    "order payment"
+    "total total";
+
+    /* grid-template-columns is divided 1 fraction 1 fraction that means 1/2 left side and 1/2 right side */
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 30px;
+
+    /* 0 margin at top and bottom and automatically aligned margin at left and right  */
+    /* you can check via going to "inspect" option on the web page */
+    margin: 0 auto;
+
+
+    row-gap: 30px;
+    column-gap: 30px;
+
+
+
+}
+
+
+
+#main-nav{
+    background-color: var(--light-black);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    padding: 20px;
+    color: var(--dark-yellow);
+
+}
+
+
+/* styling boxes -: */
+
+.box{
+    background-color: var(--absolute-white);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+
+
+}
+
+.box-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.order-box{
+    grid-area: order;
+}
+.payment{
+    grid-area: payment;
+}
+.total{
+    grid-area: total;
+}
+
+.items{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.item{
+    border-bottom: 1px solid var(--offwhite);
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-areas:
+    "quantity name price"
+    "quantity options price";
+    row-gap: 7px;
+
+}
+
+
+
+.item:last-child{
+    border-bottom: none;
+}
+
+.item-quantity{
+    grid-area: quantity;
+}
+
+.item-price{
+    grid-area: price;
+    text-align: right;
+    font-weight: bold;
+    color: orangered;
+}
+
+
+.item-options-list{
+    grid-area: options;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    font-size: 14px;
+    color: gray;
+}
+
+
+
+.item-option{
+    margin-bottom: 7px;
+}
+
+
+.input-group{
+   position: relative;
+   margin-bottom: 20px; 
+}
+
+.user-input{
+    background-color: white;
+    border: 3px solid lightgray;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 10px;
+
+}
+
+.user-input-label{
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    background-color: white;
+    /* no padding from the top but 5px padding from the left to right */
+    padding: 0 5px;
+}
+
+
+
+.short-input{
+    max-width: 200px;
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.totals-table{
+    width: 100%;
+    /* border-collapse: collapse; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+
+.totals-table td{
+    padding: 10px;
+}
+
+
+.totals-table td:last-child{
+    text-align: right;
+}
+
+
+.final-totals{
+    color: orangered;
+    font-weight: bold;
+}
+
+
+.add-item-btn{
+    background-color: var(--light-black);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.add-item{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkout{
+    border: none;
+    padding: 15px 30px;
+    background-color: var(--dark-yellow) ;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+
+/* every input inside the input group  */
+
+.input-group input{
+    background-color: lightgray;
+}
+
+
+
+/* writes some responsive css to make my page more responsive */
+
+
+@media screen and (max-width: 768px){
+    .page{
+        /* thses are three rows */
+        grid-template-areas: 
+        "order"
+        "payment"
+        "total";
+
+        grid-template-columns: 1fr;
+    }
+}
